@@ -2035,9 +2035,11 @@ class AocDay1Command extends Command
 
         $io->info("AoC Day 1");
 
-        $aocOutput = $this->day1->depthIncreases(self::INPUT);
+        $aocOutput = $this->day1->measurementsIncreases(self::INPUT);
+        $io->success(sprintf('Output - part 1 : %s', $aocOutput));
 
-        $io->success(sprintf('Output : %s', $aocOutput));
+        $aocOutput = $this->day1->measurementsWindowIncreases(self::INPUT);
+        $io->success(sprintf('Output - part 2 : %s', $aocOutput));
 
         return Command::SUCCESS;
     }

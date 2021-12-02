@@ -32,9 +32,12 @@ class Day2
      */
     private function forward(int $value): void
     {
-        if ($this->hPos + $value < 0) {
+        if (
+            ($this->aim * $value) + $this->depth < 0
+        ) {
             throw new Exception("Depth can't be negative");
         }
+
         $this->hPos += $value;
         $this->depth += $this->aim * $value;
     }

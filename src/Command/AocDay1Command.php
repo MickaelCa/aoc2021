@@ -1,13 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Command;
 
 use App\AoC\Day1;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
-use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
-use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 
@@ -17,7 +17,6 @@ use Symfony\Component\Console\Style\SymfonyStyle;
 )]
 class AocDay1Command extends Command
 {
-
     private const INPUT = [
         124,
         125,
@@ -2033,7 +2032,7 @@ class AocDay1Command extends Command
     {
         $io = new SymfonyStyle($input, $output);
 
-        $io->info("AoC Day 1");
+        $io->info('AoC Day 1');
 
         $aocOutput = $this->day1->measurementsIncreases(self::INPUT);
         $io->success(sprintf('Output - part 1 : %s', $aocOutput));

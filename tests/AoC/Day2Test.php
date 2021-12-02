@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Tests\AoC;
 
 use App\AoC\Day2;
@@ -7,15 +9,14 @@ use PHPUnit\Framework\TestCase;
 
 class Day2Test extends TestCase
 {
-
     private Day2 $day2;
     private const INPUT = [
-        "forward 5",
-        "down 5",
-        "forward 8",
-        "up 3",
-        "down 8",
-        "forward 2"
+        'forward 5',
+        'down 5',
+        'forward 8',
+        'up 3',
+        'down 8',
+        'forward 2',
     ];
 
     protected function setUp(): void
@@ -31,5 +32,4 @@ class Day2Test extends TestCase
             $this->day2->getDepth() * $this->day2->getHPos()
         );
     }
-
 }

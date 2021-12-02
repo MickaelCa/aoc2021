@@ -57,9 +57,9 @@ class Day2
         foreach ($plan as $movement) {
             [$direction, $offset] = explode(' ', $movement);
             match ($direction) {
-                'forward' => $this->forward((int)$offset),
-                'down' => $this->down((int)$offset),
-                'up' => $this->up((int)$offset),
+                'forward' => $this->forward((int) $offset),
+                'down' => $this->down((int) $offset),
+                'up' => $this->up((int) $offset),
                 default => throw new Exception(sprintf('%s is an invalid movement', $direction)),
             };
         }

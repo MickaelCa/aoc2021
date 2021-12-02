@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Tests\AoC;
 
 use App\AoC\Day1;
@@ -7,7 +9,6 @@ use PHPUnit\Framework\TestCase;
 
 class Day1Test extends TestCase
 {
-
     private Day1 $day1;
 
     private const INPUT1 = [
@@ -56,5 +57,4 @@ class Day1Test extends TestCase
             $this->day1->measurementsWindowIncreases(self::INPUT1)
         );
     }
-
 }

@@ -15,6 +15,12 @@
         "symfony/yaml": "6.0.*"
     },
     "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "phpunit/phpunit": "^9.5",
+        "symfony/browser-kit": "6.0.*",
+        "symfony/css-selector": "6.0.*",
+        "symfony/maker-bundle": "^1.36",
+        "symfony/phpunit-bridge": "^6.0"
     },
     "config": {
         "optimize-autoloader": true,

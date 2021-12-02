@@ -4,4 +4,5 @@ aoc 2021
 | Day |        Command        |
 +-----+-----------------------+
 |   1 |  bin/console aoc:day1 |
+|   2 |  bin/console aoc:day2 |
 +-----+-----------------------+
